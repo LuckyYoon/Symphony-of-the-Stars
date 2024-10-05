@@ -1,173 +1,173 @@
 {
-    "discoveries": [
-      {
-        "id": 0,
-        "image_path": "/assets/images/ancient_massive_galaxies/",
-        "music_path": [
-          "/assets/musics/ancient_massive_galaxies/bass.wav",
-          "/assets/musics/ancient_massive_galaxies/percussion1.wav",
-          "/assets/musics/ancient_massive_galaxies/percussion2.wav",
-          "/assets/musics/ancient_massive_galaxies/others.wav"
-        ],
-        "characteristics": [
-          {
-            "title": "Galaxy Characteristic 1",
-            "dot_position": { "top": "50%", "left": "50%" },
-            "description": "Description for characteristic 1 related to ancient massive galaxies."
-          },
-          {
-            "title": "Galaxy Characteristic 2",
-            "dot_position": { "top": "40%", "left": "30%" },
-            "description": "Description for characteristic 2 related to ancient massive galaxies."
-          }
-        ]
-      },
-      {
-        "id": 1,
-        "image_path": "/assets/image/timeline/53951942710_3393c60220_k.jpg",
-        "music_path": [
-          "/assets/musics/atmospheres_of_distant_worlds/bass1.wav",
-          "/assets/musics/atmospheres_of_distant_worlds/others.wav",
-          "/assets/musics/atmospheres_of_distant_worlds/percussion.wav",
-          "/assets/musics/atmospheres_of_distant_worlds/strings.wav"
-        ],
-       "characteristics": [
-          {
-            "title": "Stellar Nurseries",
-            "dot_position": { "top": "33%", "left": "20%" },
-            "description": "This is a star forming region or a ‘stellar nursery'. This means that new stars and planets are formed by the collapsing of gas and dust. Here we can see many young stars, though they are covered by the dust that creates them. This image can show scientists the star formation process in more detail than ever before."
-          },
-          {
-            "title": "Planetary Formation",
-            "dot_position": { "top": "60%", "left": "66%" },
-            "description": "Some of the stars have gas and dust circling them, this may eventually create a planetary system. This can be viewed as how galaxies are created especially as our sun was created in a cluster similar to this one from 1-3 million years ago."
-          },
-          {
-            "title": "Infrared",
-            "dot_position": { "top": "80%", "left": "30%" },
-            "description": "The orange clouds are glowing because of the infrared that NASA’s JWST uses to see galaxies from millions of light years away."
-          }
-        ]
-      },
-      {
-        "id": 20,
-        "image_path": "/assets/images/deepest_infrared_image/",
-        "music_path": [
-          "/assets/musics/deepest_infrared_image/bass.wav",
-          "/assets/musics/deepest_infrared_image/percussion.wav",
-          "/assets/musics/deepest_infrared_image/strings.wav",
-          "/assets/musics/deepest_infrared_image/vocals.wav"
-        ],
-        "characteristics": [
-          {
-            "title": "Infrared Characteristic 1",
-            "dot_position": { "top": "70%", "left": "20%" },
-            "description": "Description for characteristic 1 related to the deepest infrared image."
-          },
-          {
-            "title": "Infrared Characteristic 2",
-            "dot_position": { "top": "20%", "left": "80%" },
-            "description": "Description for characteristic 2 related to the deepest infrared image."
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "image_path": "/assets/images/first_glimpse_of_the_early_universe/",
-        "music_path": [
-          "/assets/musics/first_glimpse_of_the_early_universe/bass.wav",
-          "/assets/musics/first_glimpse_of_the_early_universe/others.wav",
-          "/assets/musics/first_glimpse_of_the_early_universe/percussion.wav",
-          "/assets/musics/first_glimpse_of_the_early_universe/strings.wav"
-        ],
-        "characteristics": [
-          {
-            "title": "Early Universe Characteristic 1",
-            "dot_position": { "top": "45%", "left": "65%" },
-            "description": "Description for characteristic 1 related to the first glimpse of the early universe."
-          },
-          {
-            "title": "Early Universe Characteristic 2",
-            "dot_position": { "top": "25%", "left": "35%" },
-            "description": "Description for characteristic 2 related to the first glimpse of the early universe."
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "image_path": "/assets/images/star_formation_in_nebulae/52212049510_3f019dd5c8_o.png",
-        "music_path": [
-          "/assets/musics/star_formation_in_nebulae/bass.wav",
-          "/assets/musics/star_formation_in_nebulae/drums.wav",
-          "/assets/musics/star_formation_in_nebulae/fx.wav",
-          "/assets/musics/star_formation_in_nebulae/synth.wav"
-        ],
-        "characteristics": [
-          {
-            "title": "Nebulae Characteristic 1",
-            "dot_position": { "top": "50%", "left": "50%" },
-            "description": "Description for characteristic 1 related to star formation in nebulae."
-          },
-          {
-            "title": "Nebulae Characteristic 2",
-            "dot_position": { "top": "50%", "left": "30%" },
-            "description": "Description for characteristic 2 related to star formation in nebulae."
-          },
-          {
-            "title": "Nebulae Characteristic 3",
-            "dot_position": { "top": "20%", "left": "70%" },
-            "description": "Description for characteristic 3 related to star formation in nebulae."
-          }
-        ]
-      },
-      {
-        "id": 5,
-        "image_path": "/assets/images/water_on_exoplanets/",
-        "music_path": [
-          "/assets/musics/water_on_exoplanets/bass.wav",
-          "/assets/musics/water_on_exoplanets/strings.wav",
-          "/assets/musics/water_on_exoplanets/fx.wav",
-          "/assets/musics/water_on_exoplanets/others.wav"
-        ],
-        "characteristics": [
-          {
-            "title": "Exoplanet Characteristic 1",
-            "dot_position": { "top": "50%", "left": "60%" },
-            "description": "Description for characteristic 1 related to water on exoplanets."
-          },
-          {
-            "title": "Exoplanet Characteristic 2",
-            "dot_position": { "top": "40%", "left": "50%" },
-            "description": "Description for characteristic 2 related to water on exoplanets."
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "image_path": "/assets/image/timeline/53951942710_3393c60220_k.jpg",
-        "music_path": [
-          "/assets/music/atmospheres_of_distant_worls/bass.wav",
-          "/assets/music/atmospheres_of_distant_worls/percussion.wav",
-          "/assets/music/atmospheres_of_distant_worls/others.wav",
-          "/assets/music/atmospheres_of_distant_worls/strings.wav"
-        ],
-        "characteristics": [
-          {
-            "title": "Stellar Nurseries",
-            "dot_position": { "top": "33%", "left": "20%" },
-            "description": "This is a star forming region or a ‘stellar nursery'. This means that new stars and planets are formed by the collapsing of gas and dust. Here we can see many young stars, though they are covered by the dust that creates them. This image can show scientists the star formation process in more detail than ever before."
-          },
-          {
-            "title": "Planetary Formation",
-            "dot_position": { "top": "60%", "left": "66%" },
-            "description": "Some of the stars have gas and dust circling them, this may eventually create a planetary system. This can be viewed as how galaxies are created especially as our sun was created in a cluster similar to this one from 1-3 million years ago."
-          },
-          {
-            "title": "Infrared",
-            "dot_position": { "top": "80%", "left": "30%" },
-            "description": "The orange clouds are glowing because of the infrared that NASA’s JWST uses to see galaxies from millions of light years away."
-          }
-        ]
-      }
-    ]
-  }
+  "discoveries": [
+    {
+      "id": 0,
+      "image_path": "/assets/images/ancient_massive_galaxies/",
+      "music_path": [
+        "/assets/musics/ancient_massive_galaxies/bass.wav",
+        "/assets/musics/ancient_massive_galaxies/percussion1.wav",
+        "/assets/musics/ancient_massive_galaxies/percussion2.wav",
+        "/assets/musics/ancient_massive_galaxies/others.wav"
+      ],
+      "characteristics": [
+        {
+          "title": "Galaxy Characteristic 1",
+          "dot_position": { "top": "50%", "left": "50%" },
+          "description": "Description for characteristic 1 related to ancient massive galaxies."
+        },
+        {
+          "title": "Galaxy Characteristic 2",
+          "dot_position": { "top": "40%", "left": "30%" },
+          "description": "Description for characteristic 2 related to ancient massive galaxies."
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "image_path": "/assets/image/timeline/53951942710_3393c60220_k.jpg",
+      "music_path": [
+        "/assets/musics/atmospheres_of_distant_worlds/bass1.wav",
+        "/assets/musics/atmospheres_of_distant_worlds/others.wav",
+        "/assets/musics/atmospheres_of_distant_worlds/percussion.wav",
+        "/assets/musics/atmospheres_of_distant_worlds/strings.wav"
+      ],
+     "characteristics": [
+        {
+          "title": "Stellar Nurseries",
+          "dot_position": { "top": "33%", "left": "20%" },
+          "description": "This is a star forming region or a ‘stellar nursery'. This means that new stars and planets are formed by the collapsing of gas and dust. Here we can see many young stars, though they are covered by the dust that creates them. This image can show scientists the star formation process in more detail than ever before."
+        },
+        {
+          "title": "Planetary Formation",
+          "dot_position": { "top": "60%", "left": "66%" },
+          "description": "Some of the stars have gas and dust circling them, this may eventually create a planetary system. This can be viewed as how galaxies are created especially as our sun was created in a cluster similar to this one from 1-3 million years ago."
+        },
+        {
+          "title": "Infrared",
+          "dot_position": { "top": "80%", "left": "30%" },
+          "description": "The orange clouds are glowing because of the infrared that NASA’s JWST uses to see galaxies from millions of light years away."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "image_path": "/assets/image/timeline/52210366419_8caa0cfad4_k.jpg",
+      "music_path": [
+        "/assets/music/deepest_infrared_image/bass.wav",
+        "/assets/music/deepest_infrared_image/percussion.wav",
+        "/assets/music/deepest_infrared_image/strings.wav",
+        "/assets/music/deepest_infrared_image/vocals.wav"
+      ],
+      "characteristics": [
+        {
+          "title": "Vivid Star Clusters",
+          "dot_position": { "top": "60%", "left": "40%" },
+          "description": "This galaxy is magnified and its individual star clusters are crisp. Researchers will be able to study this galaxy in exquisite detail, though it was previously impossible to study galaxies so distant. "
+        },
+        {
+          "title": "Warped Galaxies Forming a Ring",
+          "dot_position": { "top": "45%", "left": "70%" },
+          "description": "Why does the photo look as if looking through a magnifying glass? This phenomenon is called gravitational lensing. It occurs when the gravity of extremely massive celestial objects (near galaxies) bends the light from distant galaxies on its way to the telescope. Therefore, distant galaxies look as if forming a stretched ring around the closer ones."
+        },
+        {
+          "title": "Blue Galaxies",
+          "dot_position": { "top": "90%", "left": "40%" },
+          "description": "If a blue object in the image does not have diffraction spikes, it is a galaxy. These galaxies contain very little dust. In them, there is less gas and dust available to condense to form new stars. This means that the stars are older. "
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "image_path": "/assets/images/deepest_infrared_image/",
+      "music_path": [
+        "/assets/musics/deepest_infrared_image/bass.wav",
+        "/assets/musics/deepest_infrared_image/percussion.wav",
+        "/assets/musics/deepest_infrared_image/strings.wav",
+        "/assets/musics/deepest_infrared_image/vocals.wav"
+      ],
+      "characteristics": [
+        {
+          "title": "Infrared Characteristic 1",
+          "dot_position": { "top": "70%", "left": "20%" },
+          "description": "Description for characteristic 1 related to the deepest infrared image."
+        },
+        {
+          "title": "Infrared Characteristic 2",
+          "dot_position": { "top": "20%", "left": "80%" },
+          "description": "Description for characteristic 2 related to the deepest infrared image."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "image_path": "/assets/images/first_glimpse_of_the_early_universe/",
+      "music_path": [
+        "/assets/musics/first_glimpse_of_the_early_universe/bass.wav",
+        "/assets/musics/first_glimpse_of_the_early_universe/others.wav",
+        "/assets/musics/first_glimpse_of_the_early_universe/percussion.wav",
+        "/assets/musics/first_glimpse_of_the_early_universe/strings.wav"
+      ],
+      "characteristics": [
+        {
+          "title": "Early Universe Characteristic 1",
+          "dot_position": { "top": "45%", "left": "65%" },
+          "description": "Description for characteristic 1 related to the first glimpse of the early universe."
+        },
+        {
+          "title": "Early Universe Characteristic 2",
+          "dot_position": { "top": "25%", "left": "35%" },
+          "description": "Description for characteristic 2 related to the first glimpse of the early universe."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "image_path": "/assets/images/star_formation_in_nebulae/52212049510_3f019dd5c8_o.png",
+      "music_path": [
+        "/assets/musics/star_formation_in_nebulae/bass.wav",
+        "/assets/musics/star_formation_in_nebulae/drums.wav",
+        "/assets/musics/star_formation_in_nebulae/fx.wav",
+        "/assets/musics/star_formation_in_nebulae/synth.wav"
+      ],
+      "characteristics": [
+        {
+          "title": "Nebulae Characteristic 1",
+          "dot_position": { "top": "50%", "left": "50%" },
+          "description": "Description for characteristic 1 related to star formation in nebulae."
+        },
+        {
+          "title": "Nebulae Characteristic 2",
+          "dot_position": { "top": "50%", "left": "30%" },
+          "description": "Description for characteristic 2 related to star formation in nebulae."
+        },
+        {
+          "title": "Nebulae Characteristic 3",
+          "dot_position": { "top": "20%", "left": "70%" },
+          "description": "Description for characteristic 3 related to star formation in nebulae."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "image_path": "/assets/images/water_on_exoplanets/",
+      "music_path": [
+        "/assets/musics/water_on_exoplanets/bass.wav",
+        "/assets/musics/water_on_exoplanets/strings.wav",
+        "/assets/musics/water_on_exoplanets/fx.wav",
+        "/assets/musics/water_on_exoplanets/others.wav"
+      ],
+      "characteristics": [
+        {
+          "title": "Exoplanet Characteristic 1",
+          "dot_position": { "top": "50%", "left": "60%" },
+          "description": "Description for characteristic 1 related to water on exoplanets."
+        },
+        {
+          "title": "Exoplanet Characteristic 2",
+          "dot_position": { "top": "40%", "left": "50%" },
+          "description": "Description for characteristic 2 related to water on exoplanets."
+        }
+      ]
+    }
+  ]
+}
