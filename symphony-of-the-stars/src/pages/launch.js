@@ -3,7 +3,7 @@ import { Box, Image, Text } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 
 // Import the JSON file for launch story
-import imagesData from "../assets/jsons/launch.json"; // Adjust path as needed
+import imagesData from "../assets/json/launch.json"; // Adjust path as needed
 
 export default function LaunchPage() {
   const [typedText, setTypedText] = useState("");
@@ -62,18 +62,9 @@ export default function LaunchPage() {
         }, fadeDuration); // Wait for the fade-out before changing images
       }, imageDuration + fadeDuration); // Time for image + fade
 
-      // Transition to the next page after all images are shown
-      const nextPageTimeout = setTimeout(() => {
-        setIsFadingOut(true); // Start fading out the entire page
-        setTimeout(() => {
-          navigate("/main"); // Navigate to the next page after the fade-out
-        }, pageFadeDuration); // Use the page fade duration for this transition
-      }, totalDuration); // After all images have been shown
-
       // Cleanup intervals and timeouts on unmount
       return () => {
         clearInterval(interval);
-        clearTimeout(nextPageTimeout);
       };
     }
   }, [
