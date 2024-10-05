@@ -24,23 +24,28 @@
       },
       {
         "id": 1,
-        "image_path": "/assets/images/atmospheres_of_distant_worlds/",
+        "image_path": "/assets/image/timeline/53951942710_3393c60220_k.jpg",
         "music_path": [
           "/assets/musics/atmospheres_of_distant_worlds/bass1.wav",
           "/assets/musics/atmospheres_of_distant_worlds/others.wav",
           "/assets/musics/atmospheres_of_distant_worlds/percussion.wav",
           "/assets/musics/atmospheres_of_distant_worlds/strings.wav"
         ],
-        "characteristics": [
+       "characteristics": [
           {
-            "title": "Atmosphere Characteristic 1",
-            "dot_position": { "top": "60%", "left": "40%" },
-            "description": "Description for characteristic 1 related to atmospheres of distant worlds."
+            "title": "Stellar Nurseries",
+            "dot_position": { "top": "33%", "left": "20%" },
+            "description": "This is a star forming region or a ‘stellar nursery'. This means that new stars and planets are formed by the collapsing of gas and dust. Here we can see many young stars, though they are covered by the dust that creates them. This image can show scientists the star formation process in more detail than ever before."
           },
           {
-            "title": "Atmosphere Characteristic 2",
-            "dot_position": { "top": "30%", "left": "60%" },
-            "description": "Description for characteristic 2 related to atmospheres of distant worlds."
+            "title": "Planetary Formation",
+            "dot_position": { "top": "60%", "left": "66%" },
+            "description": "Some of the stars have gas and dust circling them, this may eventually create a planetary system. This can be viewed as how galaxies are created especially as our sun was created in a cluster similar to this one from 1-3 million years ago."
+          },
+          {
+            "title": "Infrared",
+            "dot_position": { "top": "80%", "left": "30%" },
+            "description": "The orange clouds are glowing because of the infrared that NASA’s JWST uses to see galaxies from millions of light years away."
           }
         ]
       },

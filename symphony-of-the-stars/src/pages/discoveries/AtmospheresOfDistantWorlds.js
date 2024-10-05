@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useContext, useState } from "react";
 import { Box, IconButton, Tooltip } from "@chakra-ui/react";
 import { CloseIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router-dom";
-import discoveriesData from "../../assets/jsons/discoveries.json";
+import discoveriesData from "../../assets/json/discoveries.json";
 import { UserInteractionContext } from "../../UserInteractionContext";
 import { FaVolumeUp, FaVolumeMute } from "react-icons/fa";
 
