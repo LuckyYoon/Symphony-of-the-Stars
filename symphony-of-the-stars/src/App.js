@@ -3,15 +3,18 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import LaunchPage from "./pages/launch";
 import MainPage from "./pages/main";
+import { UserInteractionProvider } from "./UserInteractionContext";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<LaunchPage />} />
-        <Route path="/main" element={<MainPage />} />
-      </Routes>
-    </Router>
+    <UserInteractionProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<LaunchPage />} />
+          <Route path="/main" element={<MainPage />} />
+        </Routes>
+      </Router>
+    </UserInteractionProvider>
   );
 }
 
