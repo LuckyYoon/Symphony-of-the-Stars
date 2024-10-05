@@ -61,8 +61,8 @@
       "characteristics": [
         {
           "title": "Vivid Star Clusters",
-          "dot_position": { "top": "60%", "left": "40%" },
-          "description": "This galaxy is magnified and its individual star clusters are crisp. Researchers will be able to study this galaxy in exquisite detail, though it was previously impossible to study galaxies so distant. "
+          "dot_position": { "top": "65%", "left": "45%" },
+          "description": "This long white galaxy is magnified and its individual star clusters are crisp. Researchers will be able to study this galaxy in exquisite detail, though it was previously impossible to study galaxies so distant in such detail. "
         },
         {
           "title": "Warped Galaxies Forming a Ring",
@@ -71,7 +71,7 @@
         },
         {
           "title": "Blue Galaxies",
-          "dot_position": { "top": "90%", "left": "40%" },
+          "dot_position": { "top": "90%", "left": "35%" },
           "description": "If a blue object in the image does not have diffraction spikes, it is a galaxy. These galaxies contain very little dust. In them, there is less gas and dust available to condense to form new stars. This means that the stars are older. "
         }
       ]
