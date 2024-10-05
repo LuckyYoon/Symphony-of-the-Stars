@@ -1,144 +1,128 @@
-import React, { useState } from "react";
-import 
-{
+import React, { useEffect, useRef, useState, useContext } from "react";
+import {
   Box,
+  HStack,
   Text,
-  Button,
-  Drawer,
-  DrawerBody,
-  DrawerOverlay,
-  DrawerContent,
-  Flex,
-  IconButton,
-  useDisclosure,
+  VStack,
 } from "@chakra-ui/react";
-import { HamburgerIcon } from "@chakra-ui/icons";
+import imagesData from "../assets/jsons/main.json"; // Import JSON data
+import { UserInteractionContext } from "../UserInteractionContext";
+import { useNavigate } from "react-router-dom";
+import SideDrawer from "../components/SideDrawer";
 
-export default function MainPage()
-{
-    const {
-        isOpen: isDrawerOpen,
-        onOpen: onDrawerOpen,
-        onClose: onDrawerClose,
-    } = useDisclosure();
+export default function MainPage() {
+  const { hasUserConsented } = useContext(UserInteractionContext);
+  const audioRef = useRef(null); // Reference to the audio element
 
-    const btnRef = React.useRef();
+  const [zoomedImages, setZoomedImages] = useState({}); // Store zoom state for each image
+  const navigate = useNavigate(); // React Router's hook for navigation
 
-    return (
-        <Box
-        bgImage="url('/assets/image/background/53567451213_74765a4a5a_4k.jpg')"
-        bgSize="cover"
-        bgPosition="center"
-        bgBlendMode="darken"
-        bgColor="rgba(0, 0, 0, 0.2)"
-        height="100vh"
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        zIndex="-1"
-        >
-            {/* Title centered above the row of images */}
-            <Text
-                color="white.200"
-                fontSize="4xl"
+  // Attempt to autoplay music when the component mounts
+  useEffect(() => {
+    if (hasUserConsented && audioRef.current) {
+      audioRef.current.volume = 0.5;
+      audioRef.current.play().catch((e) => {
+        console.error("Failed to autoplay music:", e);
+      });
+    }
+  }, [hasUserConsented]);
+
+  const handleImageClick = (index, nextPage) => {
+    // Start the zoom animation using the image's index
+    setZoomedImages((prev) => ({ ...prev, [index]: true }));
+
+    // Wait for zoom animation to complete before navigating
+    setTimeout(() => {
+      navigate(nextPage); // Navigate to the specified page
+    }, 1000); // Duration of zoom animation
+  };
+
+  return (
+    <Box
+      bgImage="url('/assets/images/background/53567451213_74765a4a5a_4k.jpg')"
+      bgSize="cover"
+      bgPosition="center"
+      bgBlendMode="darken"
+      bgColor="rgba(0, 0, 0, 0.7)"
+      height="100vh"
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      zIndex="-1"
+    >
+      {/* Title */}
+      <Text
+        color="accent.400"
+        fontSize="4xl"
+        fontWeight="bold"
+        textAlign="center"
+        position="absolute"
+        top="7%"
+      >
+        The Universe Through the Eyes of JWST
+      </Text>
+      {/* Side Drawer */}
+      <SideDrawer/>
+
+      {/* Decorative Horizontal Line */}
+      <Box
+        alignSelf="center"
+        position="absolute"
+        top="51%"
+        left="50%"
+        transform="translateX(-50%)"
+        height="8px"
+        width="90%"
+        zIndex="0"
+        bgGradient="linear(to-r, white, yellow.100, yellow.100, yellow.200, yellow.100, yellow.100, white)"
+        boxShadow="0 0 3px 1px rgba(254,226,131, 0.9)"
+        borderRadius="50%"
+        filter="blur(2px)"
+      />
+
+      {/* Images */}
+      <Box position="absolute" width="90%" top="45%">
+        <HStack justifyContent="center" spacing={100}>
+          {imagesData.images.map((image, index) => (
+            <VStack spacing={2} align="center" key={index}>
+              <Box
+                height="125px"
+                width="125px"
+                borderRadius="full"
+                backgroundImage={`url(${image.image_path})`}
+                backgroundSize={zoomedImages[index] ? "100%" : "150%"}
+                backgroundPosition="center"
+                backgroundRepeat="no-repeat"
+                boxShadow="0 0 7px 7px rgba(0,0,0, 0.9)"
+                zIndex={zoomedImages[index] ? "999" : "1"}
+                transform={zoomedImages[index] ? "scale(40)" : "scale(1)"}
+                transition={
+                  zoomedImages[index]
+                    ? "transform 1.5s ease-in, background-size 1.5s ease-in"
+                    : "transform 0.1s ease-out, background-size 0.1s ease-out"
+                }
+                cursor="pointer"
+                _hover={{
+                  backgroundColor: "rgba(0, 0, 0, 0.3)",
+                  backgroundBlendMode: "darken",
+                }}
+                onClick={() => handleImageClick(index, image.next_page)} // Pass the index and next page
+              />
+              <Text
+                color="accent.400"
+                fontSize="xl"
+                whiteSpace="pre-line"
                 fontWeight="bold"
-                textAlign="center" // Center the title horizontally
-                position="absolute"
-                top="7%" // Adjust the top margin to fit your layout
-            >
-                Journey Through JWST...
-            </Text> 
-            <Box position="absolute" width="90%" top="50%">
-            {/* Horizontal timeline-line */}
-            <Box
-            position="absolute"
-            top="28%"
-            left="0"
-            right="0"
-            height="40px"
-            width="100%"
-            zIndex="0" // adds the blur effect to soften the edges
-            bgGradient="linear(to-r, yellow.100, yellow.100, yellow.100, yellow.100, yellow.100, yellow.100, yellow.100)"
-            boxShadow="0 0 2px 1px rgba(254,226,131, 1)"
-            borderRadius="75%"
-            filter="blur(25px)"
-            />
-            </Box>
-            <IconButton
-            icon={<HamburgerIcon />}
-            ref={btnRef}
-            onClick={onDrawerOpen} // Use drawer's onOpen
-            position="absolute"
-            top="3%"
-            right="3%"
-            bg="accent.600"
-            padding="0"
-            fontSize="32px"
-            color="accent.200"
-            _hover={{ bg: "accent.600", color: "accent.500" }}
-            />
-            {/* Side Panel */}
-            <Drawer
-                isOpen={isDrawerOpen} // Use drawer's isOpen
-                placement="right"
-                onClose={onDrawerClose} // Use drawer's onClose
-                finalFocusRef={btnRef}
-                size="xs"
-            >
-                <DrawerOverlay />
-                <DrawerContent bg="accent.100" height="100%" opacity="80%">
-                <DrawerBody>
-                    <Flex
-                    height="100%"
-                    alignItems="center"
-                    justifyContent="center"
-                    flexDirection="column"
-                    gap={20}
-                    >
-                    <Button
-                        bg="accent.100"
-                        color="accent.500"
-                        fontSize="3xl"
-                        _hover={{ bg: "accent.100", color: "accent.300" }}
-                    >
-                        <Text>ABOUT US</Text>
-                    </Button>
-                    <Button
-                        bg="accent.100"
-                        color="accent.500"
-                        fontSize="3xl"
-                        _hover={{ bg: "accent.100", color: "accent.300" }}
-                    >
-                        <Text>PRESENTATION</Text>
-                    </Button>
-                    <Button
-                        bg="accent.100"
-                        color="accent.500"
-                        fontSize="3xl"
-                        _hover={{ bg: "accent.100", color: "accent.300" }}
-                    >
-                        <Text>GITHUB</Text>
-                    </Button>
-                    <Button
-                        bg="accent.100"
-                        color="accent.500"
-                        fontSize="3xl"
-                        _hover={{ bg: "accent.100", color: "accent.300" }}
-                    >
-                        <Text>NOTION</Text>
-                    </Button>
-                    <Button
-                        bg="accent.100"
-                        color="accent.500"
-                        fontSize="3xl"
-                        _hover={{ bg: "accent.100", color: "accent.300" }}
-                    >
-                        <Text>WORKS CITED</Text>
-                    </Button>
-                    </Flex>
-                </DrawerBody>
-                </DrawerContent>
-            </Drawer>
-        </Box>
-    );
+                align="center"
+              >
+                {image.description}
+              </Text>
+            </VStack>
+          ))}
+        </HStack>
+      </Box>
+
+      <audio ref={audioRef} src="/assets/musics/main.wav" loop />
+    </Box>
+  );
 }
