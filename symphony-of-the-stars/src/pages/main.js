@@ -31,6 +31,22 @@ export default function MainPage()
             >
                 Journey Through the JWST...
             </Text> 
+            <Box position="absolute" width="90%" top="50%">
+            {/* Horizontal timeline-line */}
+            <Box
+            position="absolute"
+            top="28%"
+            left="0"
+            right="0"
+            height="40px"
+            width="100%"
+            zIndex="0" // adds the blur effect to soften the edges
+            bgGradient="linear(to-r, yellow.100, yellow.100, yellow.100, yellow.100, yellow.100, yellow.100, yellow.100)"
+            boxShadow="0 0 2px 1px rgba(254,226,131, 1)"
+            borderRadius="75%"
+            filter="blur(25px)"
+            />
+            </Box>
         </Box>
     );
 }
