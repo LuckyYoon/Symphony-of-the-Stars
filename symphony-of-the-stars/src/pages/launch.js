@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { Box, Image, Text } from "@chakra-ui/react";
+import React, { useEffect, useRef, useState, useContext } from "react";
+import { Box, Image, Text, Button } from "@chakra-ui/react";
+import { UserInteractionContext } from "../UserInteractionContext";
 import { useNavigate } from "react-router-dom";
 
 // Import the JSON file for launch story
@@ -8,36 +9,55 @@ import imagesData from "../assets/json/launch.json"; // Adjust path as needed
 export default function LaunchPage() {
   const [typedText, setTypedText] = useState("");
   const [isTypingComplete, setIsTypingComplete] = useState(false);
-  const [isTextFadingOut, setIsTextFadingOut] = useState(false); // For text fade out
+  const [isTextFadingOut, setIsTextFadingOut] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isFadingOut, setIsFadingOut] = useState(false);
   const [imageOpacity, setImageOpacity] = useState(1);
   const [showSlideshow, setShowSlideshow] = useState(false);
+  const [hasJourneyStarted, setHasJourneyStarted] = useState(false); // New state
   const navigate = useNavigate();
+
+  const { hasUserConsented, setHasUserConsented } = useContext(
+    UserInteractionContext
+  );
+  const audioRef = useRef(null);
 
   const fullText = "Hello JWST!";
   const typingSpeed = 200; // 0.2 seconds per character
-  const imageDuration = 4000; // Time each image stays visible, including transitions
+  const imageDuration = 300; // Time each image stays visible, including transitions
   const fadeDuration = 500; // Time for fading between images
   const pageFadeDuration = 1000; // Time for fading out to the next page
   const totalDuration =
     (imageDuration + fadeDuration) * imagesData.images.length;
 
+  // Function to start the journey
+  const startJourney = () => {
+    setHasJourneyStarted(true);
+    setHasUserConsented(true); // Update the context state
+    // Start playing background music
+    if (audioRef.current) {
+      audioRef.current.volume = 0.5; // Set volume to 50%
+      audioRef.current.play().catch((e) => {
+        console.error("Failed to play audio:", e);
+      });
+    }
+  };
+
   // Typewriter effect for "Hello JWST!"
   useEffect(() => {
-    if (typedText.length < fullText.length) {
+    if (hasJourneyStarted && typedText.length < fullText.length) {
       const typingTimeout = setTimeout(() => {
         setTypedText((prev) => fullText.slice(0, prev.length + 1));
       }, typingSpeed);
       return () => clearTimeout(typingTimeout);
-    } else {
+    } else if (typedText.length === fullText.length) {
       // Start fading out the text after it finishes typing
       setTimeout(() => {
         setIsTextFadingOut(true);
         setTimeout(() => setIsTypingComplete(true), fadeDuration); // Wait for fade to complete before showing slideshow
       }, 1000); // Short delay before fading out text
     }
-  }, [typedText, fullText, typingSpeed, fadeDuration]);
+  }, [typedText, fullText, typingSpeed, fadeDuration, hasJourneyStarted]);
 
   // Transition from typing to slideshow after typing is complete
   useEffect(() => {
@@ -66,6 +86,9 @@ export default function LaunchPage() {
       const nextPageTimeout = setTimeout(() => {
         setIsFadingOut(true); // Start fading out the entire page
         setTimeout(() => {
+          if (audioRef.current) {
+            audioRef.current.pause();
+          }
           navigate("/main"); // Navigate to the next page after the fade-out
         }, pageFadeDuration); // Use the page fade duration for this transition
       }, totalDuration); // After all images have been shown
@@ -98,9 +121,20 @@ export default function LaunchPage() {
       position="relative"
       overflow="hidden"
       opacity={isFadingOut ? 0 : 1}
-      transition={`opacity ${fadeDuration}ms ease-in-out`}
+      transition={`opacity ${pageFadeDuration}ms ease-in-out`}
     >
-      {!showSlideshow ? (
+      {!hasJourneyStarted ? (
+        // Display the "Start Journey" button
+        <Button
+          bg="accent.200"
+          color="accent.500"
+          fontSize="2xl"
+          onClick={startJourney}
+          _hover={{ bg: "accent.500", color: "accent.200" }}
+        >
+          Start Journey
+        </Button>
+      ) : !showSlideshow ? (
         // Display the "Hello JWST!" text until typing is complete, with fade-out effect
         <Text
           fontSize="6xl"
@@ -142,6 +176,13 @@ export default function LaunchPage() {
           </Text>
         </>
       )}
+
+      {/* Background Music */}
+      <audio
+        ref={audioRef}
+        src="/assets/music/launch.wav" // Replace with your music file path
+        loop
+      />
     </Box>
   );
 }

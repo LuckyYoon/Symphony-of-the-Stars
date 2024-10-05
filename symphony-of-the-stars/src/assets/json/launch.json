@@ -3,38 +3,47 @@
     {
       "index": 1,
       "color": "white",
-      "title": "Deepest Infrared Image of Universe",
-      "image_source": "https://www.flickr.com/photos/nasawebbtelescope/52210366419/in/album-72177720300469752",
-      "image_path": "/assets/launch/52210366419_8caa0cfad4_k.jpg",
-      "description": "JWST's first infrared image reveals countless galaxies, showcasing the early universe's beauty",
+      "image_source": "https://www.flickr.com/photos/nasawebbtelescope/8542011795/in/album-72157629134274763",
+      "image_path": "/assets/launch/1.jpeg",
+      "description": "A to-scale model of the JWST in Austin, Texas in March of 2013",
       "left_offset": "50%",
-      "bottom_offset": "4%",
-      "metadata_stage": "First Images Captured in Space",
-      "metadata_stage_abbreviated": "ficis"
+      "bottom_offset": "85%"
     },
     {
       "index": 2,
-      "color": "white",
-      "title": "Stephan's Quintet",
-      "image_path": "/assets/launch/52210580092_36abcc092c_k.jpg",
-      "image_source": "https://www.flickr.com/photos/nasawebbtelescope/52210580092/in/album-72177720300469752",
-      "description": "Stephan's Quintet: a group of 5 interacting galaxies revealing insights into galaxy evolution",
+      "color": "accent.600",
+      "image_source": "https://www.flickr.com/photos/nasawebbtelescope/51770268113/in/album-72157629134274763",
+      "image_path": "/assets/launch/2.jpeg",
+      "description": "Arianespace's Ariane 5 rocket with NASA's James Webb Space Telescope at the launchpad, December 23rd 2021",
       "left_offset": "50%",
-      "bottom_offset": "4%",
-      "metadata_stage": "First Images Captured in Space",
-      "metadata_stage_abbreviated": "ficis"
+      "bottom_offset": "4%"
     },
     {
       "index": 3,
       "color": "white",
-      "title": "Carine Nebulae",
-      "image_source": "https://www.flickr.com/photos/nasawebbtelescope/52259221868/in/album-72177720300469752",
-      "image_path": "/assets/launch/52259221868_b757d6cdea_k.jpg",
-      "description": "Carina Nebula: a massive star-forming region in the Milky Way, captured during JWST's early missions",
+      "image_source": "https://www.flickr.com/photos/nasawebbtelescope/51773188447/in/album-72157629134274763",
+      "image_path": "/assets/launch/3.jpeg",
+      "description": "Countdown of the launch of NASA’s JWST on Christmas day 2021",
       "left_offset": "50%",
-      "bottom_offset": "4%",
-      "metadata_stage": "First Images Captured in Space",
-      "metadata_stage_abbreviated": "ficis"
+      "bottom_offset": "4%"
+    },
+    {
+      "index": 4,
+      "color": "white",
+      "image_source": "https://www.flickr.com/photos/nasawebbtelescope/51775043129/in/album-72157629134274763",
+      "image_path": "/assets/launch/4.jpeg",
+      "description": "The launch of NASA’s JWST on Christmas day 2021",
+      "left_offset": "50%",
+      "bottom_offset": "4%"
+    },
+    {
+      "index": 5,
+      "color": "white",
+      "image_source": "https://www.flickr.com/photos/nasawebbtelescope/51775886252/in/album-72157629134274763",
+      "image_path": "/assets/launch/5.jpeg",
+      "description": "The last time NASA’s JWST is in sight, December 27th 2021",
+      "left_offset": "50%",
+      "bottom_offset": "4%"
     }
   ]
 }
