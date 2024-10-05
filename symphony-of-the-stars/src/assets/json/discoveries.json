@@ -1,0 +1,141 @@
+{
+    "discoveries": [
+      {
+        "id": 0,
+        "image_path": "/assets/images/ancient_massive_galaxies/",
+        "music_path": [
+          "/assets/musics/ancient_massive_galaxies/bass.wav",
+          "/assets/musics/ancient_massive_galaxies/percussion1.wav",
+          "/assets/musics/ancient_massive_galaxies/percussion2.wav",
+          "/assets/musics/ancient_massive_galaxies/others.wav"
+        ],
+        "characteristics": [
+          {
+            "title": "Galaxy Characteristic 1",
+            "dot_position": { "top": "50%", "left": "50%" },
+            "description": "Description for characteristic 1 related to ancient massive galaxies."
+          },
+          {
+            "title": "Galaxy Characteristic 2",
+            "dot_position": { "top": "40%", "left": "30%" },
+            "description": "Description for characteristic 2 related to ancient massive galaxies."
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "image_path": "/assets/images/atmospheres_of_distant_worlds/",
+        "music_path": [
+          "/assets/musics/atmospheres_of_distant_worlds/bass1.wav",
+          "/assets/musics/atmospheres_of_distant_worlds/others.wav",
+          "/assets/musics/atmospheres_of_distant_worlds/percussion.wav",
+          "/assets/musics/atmospheres_of_distant_worlds/strings.wav"
+        ],
+        "characteristics": [
+          {
+            "title": "Atmosphere Characteristic 1",
+            "dot_position": { "top": "60%", "left": "40%" },
+            "description": "Description for characteristic 1 related to atmospheres of distant worlds."
+          },
+          {
+            "title": "Atmosphere Characteristic 2",
+            "dot_position": { "top": "30%", "left": "60%" },
+            "description": "Description for characteristic 2 related to atmospheres of distant worlds."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "image_path": "/assets/images/deepest_infrared_image/",
+        "music_path": [
+          "/assets/musics/deepest_infrared_image/bass.wav",
+          "/assets/musics/deepest_infrared_image/percussion.wav",
+          "/assets/musics/deepest_infrared_image/strings.wav",
+          "/assets/musics/deepest_infrared_image/vocals.wav"
+        ],
+        "characteristics": [
+          {
+            "title": "Infrared Characteristic 1",
+            "dot_position": { "top": "70%", "left": "20%" },
+            "description": "Description for characteristic 1 related to the deepest infrared image."
+          },
+          {
+            "title": "Infrared Characteristic 2",
+            "dot_position": { "top": "20%", "left": "80%" },
+            "description": "Description for characteristic 2 related to the deepest infrared image."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "image_path": "/assets/images/first_glimpse_of_the_early_universe/",
+        "music_path": [
+          "/assets/musics/first_glimpse_of_the_early_universe/bass.wav",
+          "/assets/musics/first_glimpse_of_the_early_universe/others.wav",
+          "/assets/musics/first_glimpse_of_the_early_universe/percussion.wav",
+          "/assets/musics/first_glimpse_of_the_early_universe/strings.wav"
+        ],
+        "characteristics": [
+          {
+            "title": "Early Universe Characteristic 1",
+            "dot_position": { "top": "45%", "left": "65%" },
+            "description": "Description for characteristic 1 related to the first glimpse of the early universe."
+          },
+          {
+            "title": "Early Universe Characteristic 2",
+            "dot_position": { "top": "25%", "left": "35%" },
+            "description": "Description for characteristic 2 related to the first glimpse of the early universe."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "image_path": "/assets/images/star_formation_in_nebulae/52212049510_3f019dd5c8_o.png",
+        "music_path": [
+          "/assets/musics/star_formation_in_nebulae/bass.wav",
+          "/assets/musics/star_formation_in_nebulae/drums.wav",
+          "/assets/musics/star_formation_in_nebulae/fx.wav",
+          "/assets/musics/star_formation_in_nebulae/synth.wav"
+        ],
+        "characteristics": [
+          {
+            "title": "Nebulae Characteristic 1",
+            "dot_position": { "top": "50%", "left": "50%" },
+            "description": "Description for characteristic 1 related to star formation in nebulae."
+          },
+          {
+            "title": "Nebulae Characteristic 2",
+            "dot_position": { "top": "50%", "left": "30%" },
+            "description": "Description for characteristic 2 related to star formation in nebulae."
+          },
+          {
+            "title": "Nebulae Characteristic 3",
+            "dot_position": { "top": "20%", "left": "70%" },
+            "description": "Description for characteristic 3 related to star formation in nebulae."
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "image_path": "/assets/images/water_on_exoplanets/",
+        "music_path": [
+          "/assets/musics/water_on_exoplanets/bass.wav",
+          "/assets/musics/water_on_exoplanets/strings.wav",
+          "/assets/musics/water_on_exoplanets/fx.wav",
+          "/assets/musics/water_on_exoplanets/others.wav"
+        ],
+        "characteristics": [
+          {
+            "title": "Exoplanet Characteristic 1",
+            "dot_position": { "top": "50%", "left": "60%" },
+            "description": "Description for characteristic 1 related to water on exoplanets."
+          },
+          {
+            "title": "Exoplanet Characteristic 2",
+            "dot_position": { "top": "40%", "left": "50%" },
+            "description": "Description for characteristic 2 related to water on exoplanets."
+          }
+        ]
+      }
+    ]
+  }

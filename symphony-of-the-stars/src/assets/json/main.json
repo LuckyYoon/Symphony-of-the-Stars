@@ -1,0 +1,40 @@
+{
+    "images": [
+      {
+        "index": 1,
+        "image_path": "/assets/images/ancient_massive_galaxies/",
+        "description": "Ancient Massive Galaxies",
+        "next_page": "/ancient-massive-galaxies"
+      },
+      {
+        "index": 2,
+        "image_path": "/assets/images/atmospheres_of_distant_worlds/",
+        "description": "Atmospheres of Distant Worlds",
+        "next_page": "/atmospheres-of-distant-worlds"
+      },
+      {
+        "index": 3,
+        "image_path": "/assets/images/deepest_infrared_image/",
+        "description": "Deepest Infrared Image",
+        "next_page": "/deepest-infrared-image"
+      },
+      {
+        "index": 4,
+        "image_path": "/assets/images/first_glimpse_of_the_early_universe/",
+        "description": "First Glimpse of the Early Universe",
+        "next_page": "/first-glimpse-of-the-early-universe"
+      },
+      {
+        "index": 5,
+        "image_path": "/assets/images/star_formation_in_nebulae/52212049510_bb98d2eab6_5k.jpg",
+        "description": "Star Formation in Nebulae",
+        "next_page": "/star-formation-in-nebulae"
+      },
+      {
+        "index": 6,
+        "image_path": "/assets/images/water_on_exoplanets/",
+        "description": "Water on Exoplanets",
+        "next_page": "/water-on-exoplanets"
+      }
+    ]
+  }
