@@ -5,7 +5,7 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import imagesData from "../assets/jsons/main.json"; // Import JSON data
+import imagesData from "../assets/json/main.json"; // Import JSON data
 import { UserInteractionContext } from "../UserInteractionContext";
 import { useNavigate } from "react-router-dom";
 import SideDrawer from "../components/SideDrawer";
@@ -39,7 +39,7 @@ export default function MainPage() {
 
   return (
     <Box
-      bgImage="url('/assets/images/background/53567451213_74765a4a5a_4k.jpg')"
+      bgImage="url('/assets/image/background/53567451213_74765a4a5a_4k.jpg')"
       bgSize="cover"
       bgPosition="center"
       bgBlendMode="darken"
