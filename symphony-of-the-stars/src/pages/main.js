@@ -9,11 +9,11 @@ export default function MainPage()
 {
     return (
         <Box
-        bgImage="url('/assets/images/background/53567451213_74765a4a5a_4k.jpg')"
+        bgImage="url('/assets/background/53567451213_74765a4a5a_4k.jpg')"
         bgSize="cover"
         bgPosition="center"
         bgBlendMode="darken"
-        bgColor="rgba(0, 0, 0, 0.7)"
+        bgColor="rgba(0, 0, 0, 0.2)"
         height="100vh"
         display="flex"
         justifyContent="center"
