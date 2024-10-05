@@ -29,7 +29,7 @@ export default function MainPage()
                 position="absolute"
                 top="7%" // Adjust the top margin to fit your layout
             >
-                Journey Through the JWST...
+                Journey Through JWST...
             </Text> 
             <Box position="absolute" width="90%" top="50%">
             {/* Horizontal timeline-line */}
