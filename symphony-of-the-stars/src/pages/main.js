@@ -10,7 +10,7 @@ import
   DrawerContent,
   Flex,
   IconButton,
-  useDisclosure
+  useDisclosure,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 
@@ -74,8 +74,8 @@ export default function MainPage()
             bg="accent.600"
             padding="0"
             fontSize="32px"
-            color="accent.300"
-            _hover={{ bg: "accent.600", color: "accent.400" }}
+            color="accent.200"
+            _hover={{ bg: "accent.600", color: "accent.500" }}
             />
             {/* Side Panel */}
             <Drawer
@@ -86,7 +86,7 @@ export default function MainPage()
                 size="xs"
             >
                 <DrawerOverlay />
-                <DrawerContent bg="accent.100" height="100%">
+                <DrawerContent bg="accent.100" height="100%" opacity="80%">
                 <DrawerBody>
                     <Flex
                     height="100%"
