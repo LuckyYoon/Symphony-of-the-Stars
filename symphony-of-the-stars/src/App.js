@@ -8,6 +8,8 @@ import AtmospheresOfDistantWorldsPage from "./pages/discoveries/AtmospheresOfDis
 import DeepestInfraredImagePage from "./pages/discoveries/DeepestInfraredImage"
 import AncientMassiveGalaxiesPage from "./pages/discoveries/AncientMassiveGalaxies"
 import StarFormationInNebulaePage from "./pages/discoveries/StarFormationInNebulae"
+import EarlyUniversePage from "./pages/discoveries/EarlyUniverse";
+import WaterOnExoplanetsPage from "./pages/discoveries/WaterOnExoplanets";
 
 function App() {
   return (
@@ -31,6 +33,14 @@ function App() {
           <Route
             path="/star-formation-in-nebulae"
             element={<StarFormationInNebulaePage />}
+          />
+          <Route
+            path="/early-universe"
+            element={<EarlyUniversePage />}
+          />
+          <Route
+            path="/water-on-exoplanets"
+            element={<WaterOnExoplanetsPage />}
           />
         </Routes>
       </Router>

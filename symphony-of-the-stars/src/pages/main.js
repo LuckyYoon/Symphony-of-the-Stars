@@ -122,7 +122,7 @@ export default function MainPage() {
         </HStack>
       </Box>
 
-      <audio ref={audioRef} src="/assets/musics/main.wav" loop />
+      <audio ref={audioRef} src="/assets/music/main.wav" loop />
     </Box>
   );
 }

@@ -20,9 +20,9 @@
       },
       {
         "index": 4,
-        "image_path": "/assets/images/first_glimpse_of_the_early_universe/",
+        "image_path": "/assets/image/timeline/53820174319_ab9869aca6_o.jpg",
         "description": "First Glimpse of the Early Universe",
-        "next_page": "/first-glimpse-of-the-early-universe"
+        "next_page": "/early-universe"
       },
       {
         "index": 5,
@@ -32,7 +32,7 @@
       },
       {
         "index": 6,
-        "image_path": "/assets/images/water_on_exoplanets/",
+        "image_path": "/assets/image/timeline/wateronexp.jpg",
         "description": "Water on Exoplanets",
         "next_page": "/water-on-exoplanets"
       }
