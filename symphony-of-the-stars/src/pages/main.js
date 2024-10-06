@@ -74,9 +74,6 @@ export default function MainPage() {
         Interactive JWST Model
       </Button>
 
-      {/* Side Drawer */}
-      <SideDrawer />
-
       {/* Decorative Horizontal Line */}
       <Box
         alignSelf="center"
