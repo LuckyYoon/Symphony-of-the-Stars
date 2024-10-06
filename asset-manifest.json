@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Symphony-of-the-Stars/static/css/main.383d1078.css",
-    "main.js": "/Symphony-of-the-Stars/static/js/main.ffba906b.js",
+    "main.js": "/Symphony-of-the-Stars/static/js/main.bfbeba20.js",
     "static/js/453.c96bf895.chunk.js": "/Symphony-of-the-Stars/static/js/453.c96bf895.chunk.js",
     "index.html": "/Symphony-of-the-Stars/index.html",
     "main.383d1078.css.map": "/Symphony-of-the-Stars/static/css/main.383d1078.css.map",
-    "main.ffba906b.js.map": "/Symphony-of-the-Stars/static/js/main.ffba906b.js.map",
+    "main.bfbeba20.js.map": "/Symphony-of-the-Stars/static/js/main.bfbeba20.js.map",
     "453.c96bf895.chunk.js.map": "/Symphony-of-the-Stars/static/js/453.c96bf895.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.383d1078.css",
-    "static/js/main.ffba906b.js"
+    "static/js/main.bfbeba20.js"
   ]
 }
