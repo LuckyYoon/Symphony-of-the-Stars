@@ -16,7 +16,7 @@ export default function EarlyUniversePage() {
 
 
  // Directly access the Planetary Nebula data (id = 0)
- const data = discoveriesData.discoveries[4];
+ const data = discoveriesData.discoveries[3];
 
 
  useEffect(() => {
