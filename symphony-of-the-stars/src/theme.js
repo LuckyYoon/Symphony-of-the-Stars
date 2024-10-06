@@ -3,7 +3,7 @@ import { extendTheme } from "@chakra-ui/react";
 const theme = extendTheme({
   colors: {
     accent: {
-      100: "#0c222b",
+      100: "#290d14",
       200: "#3e4b56",
       300: "#a79d9c",
       400: "#d4c2b8",
@@ -22,7 +22,7 @@ const theme = extendTheme({
         fontFamily: `"Segoe UI","Helvetica", "Verdana", sans-serif`, // Set global font family to monospace
       },
       "*": {
-        textShadow: "0px 0px 10px rgba(255, 255, 255, 0.8)",
+        textShadow: "0px 0px 10px rgba(255, 255, 255, 0.1)",
       },
     },
   },

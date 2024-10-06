@@ -9,7 +9,8 @@ import {
   IconButton,
   useDisclosure,
   Button,
-  Text
+  Text,
+  Image,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 
@@ -24,14 +25,20 @@ export default function SideDrawer() {
     <>
       {/* Drawer trigger (Hamburger button) */}
       <IconButton
-        icon={<HamburgerIcon />}
+        icon={
+          <Image
+            src={`${process.env.PUBLIC_URL}/assets/image/buttons/hamburger.png`}
+            alt="x"
+          />
+        }
         onClick={onDrawerOpen}
         position="absolute"
         top="3%"
         right="3%"
         bg="accent.600"
         padding="0"
-        fontSize="32px"
+        height="12px"
+        width="12px"
         color="accent.300"
         _hover={{ bg: "accent.600", color: "accent.400" }}
       />
@@ -44,7 +51,7 @@ export default function SideDrawer() {
         size="xs"
       >
         <DrawerOverlay />
-        <DrawerContent bg="accent.100" height="100%">
+        <DrawerContent bg="accent.100" height="100%" opacity={0.8}>
           <DrawerBody>
             <Flex
               height="100%"
@@ -55,7 +62,7 @@ export default function SideDrawer() {
             >
               <Button
                 bg="accent.100"
-                color="accent.500"
+                color="white"
                 fontSize="3xl"
                 _hover={{ bg: "accent.100", color: "accent.300" }}
               >
@@ -63,7 +70,7 @@ export default function SideDrawer() {
               </Button>
               <Button
                 bg="accent.100"
-                color="accent.500"
+                color="white"
                 fontSize="3xl"
                 _hover={{ bg: "accent.100", color: "accent.300" }}
               >
@@ -71,7 +78,7 @@ export default function SideDrawer() {
               </Button>
               <Button
                 bg="accent.100"
-                color="accent.500"
+                color="white"
                 fontSize="3xl"
                 _hover={{ bg: "accent.100", color: "accent.300" }}
               >
@@ -79,7 +86,7 @@ export default function SideDrawer() {
               </Button>
               <Button
                 bg="accent.100"
-                color="accent.500"
+                color="white"
                 fontSize="3xl"
                 _hover={{ bg: "accent.100", color: "accent.300" }}
               >
@@ -87,7 +94,7 @@ export default function SideDrawer() {
               </Button>
               <Button
                 bg="accent.100"
-                color="accent.500"
+                color="white"
                 fontSize="3xl"
                 _hover={{ bg: "accent.100", color: "accent.300" }}
               >

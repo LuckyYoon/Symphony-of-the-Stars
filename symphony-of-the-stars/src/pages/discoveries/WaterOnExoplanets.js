@@ -162,7 +162,7 @@ export default function WaterOnExoplanetsPage() {
           left={char.dot_position.left}
           transform="translate(-50%, -50%)"
         >
-          <Tooltip label={char.description}>
+          <Tooltip label={char.description} bgColor="accent.100">
             <IconButton
               icon={
                 <Image

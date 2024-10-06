@@ -128,9 +128,11 @@ export default function LaunchPage() {
         <Button
           bg="accent.200"
           color="accent.500"
-          fontSize="2xl"
+          fontSize="3xl"
+          width="220px"
+          height="60px"
           onClick={startJourney}
-          _hover={{ bg: "accent.500", color: "accent.200" }}
+          _hover={{ bg: "accent.600", color: "accent.200" }}
         >
           Start Journey
         </Button>
