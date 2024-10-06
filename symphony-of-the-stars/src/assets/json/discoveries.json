@@ -82,28 +82,6 @@
       ]
     },
     {
-      "id": 20,
-      "image_path": "/assets/images/deepest_infrared_image/",
-      "music_path": [
-        "/assets/musics/deepest_infrared_image/bass.wav",
-        "/assets/musics/deepest_infrared_image/percussion.wav",
-        "/assets/musics/deepest_infrared_image/strings.wav",
-        "/assets/musics/deepest_infrared_image/vocals.wav"
-      ],
-      "characteristics": [
-        {
-          "title": "Infrared Characteristic 1",
-          "dot_position": { "top": "70%", "left": "20%" },
-          "description": "Description for characteristic 1 related to the deepest infrared image."
-        },
-        {
-          "title": "Infrared Characteristic 2",
-          "dot_position": { "top": "20%", "left": "80%" },
-          "description": "Description for characteristic 2 related to the deepest infrared image."
-        }
-      ]
-    },
-    {
       "id": 3,
       "image_path": "/assets/images/first_glimpse_of_the_early_universe/",
       "music_path": [
@@ -154,23 +132,28 @@
     },
     {
       "id": 5,
-      "image_path": "/assets/images/water_on_exoplanets/",
+      "image_path": "/assets/image/timeline/wateronexp.jpg",
       "music_path": [
-        "/assets/musics/water_on_exoplanets/bass.wav",
-        "/assets/musics/water_on_exoplanets/strings.wav",
-        "/assets/musics/water_on_exoplanets/fx.wav",
-        "/assets/musics/water_on_exoplanets/others.wav"
+        "/assets/music/water_on_exoplanets/bass.wav",
+        "/assets/music/water_on_exoplanets/strings.wav",
+        "/assets/music/water_on_exoplanets/fx.wav",
+        "/assets/music/water_on_exoplanets/others.wav"
       ],
       "characteristics": [
         {
-          "title": "Exoplanet Characteristic 1",
+          "title": "How Water Appear on Planets",
           "dot_position": { "top": "50%", "left": "60%" },
-          "description": "Description for characteristic 1 related to water on exoplanets."
+          "description": "Depending on the temperature and distance of a star from the earth, water appears in various ways; Water Vapour, usually found in the atmosphere. Liquid Water, which would allow us to judge what temperature the planet possesses. Ice, would be on either the surface or below other matters."
         },
         {
-          "title": "Exoplanet Characteristic 2",
+          "title": "Planets with Water",
           "dot_position": { "top": "40%", "left": "50%" },
-          "description": "Description for characteristic 2 related to water on exoplanets."
+          "description": "The exoplanetary findings of interest right now are related to water. For example, there was a water vapour detected on an exoplanet called K2-18b that orbits a star in its habitable range, and this became an important milestone of scientists’ research on life outside Earth. JWST found water and other substances in the atmosphere of this massive gas."
+        },
+        {
+          "title": "WASP-96 b",
+          "dot_position": { "top": "30%", "left": "40%" },
+          "description": "WASP-96 b is a hot gas giant exoplanet in the constellation phoenix 1150 light years far that orbits a star similar to the sun. It is extremely near its star at the distance of 1/20th compared to the Earth and Sun. This allows WASP-96 b to fully orbit the star in 3.5 days. The planet was discovered through ground-based observations in 2014. Its host star, WASP-96, is similar in size, mass, temperature, and colour to the Sun, but a little older."
         }
       ]
     }
