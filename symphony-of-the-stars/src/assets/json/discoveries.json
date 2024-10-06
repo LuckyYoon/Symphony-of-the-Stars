@@ -105,23 +105,28 @@
     },
     {
       "id": 3,
-      "image_path": "/assets/images/first_glimpse_of_the_early_universe/",
+      "image_path": "/assets/image/timeline/53820174319_ab9869aca6_o.jpg",
       "music_path": [
-        "/assets/musics/first_glimpse_of_the_early_universe/bass.wav",
-        "/assets/musics/first_glimpse_of_the_early_universe/others.wav",
-        "/assets/musics/first_glimpse_of_the_early_universe/percussion.wav",
-        "/assets/musics/first_glimpse_of_the_early_universe/strings.wav"
+        "/assets/music/first_glimpse_of_the_early_universe/bass.wav",
+        "/assets/music/first_glimpse_of_the_early_universe/others.wav",
+        "/assets/music/first_glimpse_of_the_early_universe/percussion.wav",
+        "/assets/music/first_glimpse_of_the_early_universe/strings.wav"
       ],
       "characteristics": [
         {
-          "title": "Early Universe Characteristic 1",
+          "title": "Early Universe",
           "dot_position": { "top": "45%", "left": "65%" },
-          "description": "Description for characteristic 1 related to the first glimpse of the early universe."
+          "description": "These gravitationally bound star clusters were created when the universe was merely 460 million years old. We are looking back across 97% of cosmic time!"
         },
         {
-          "title": "Early Universe Characteristic 2",
+          "title": "With Hubble's Help",
           "dot_position": { "top": "25%", "left": "35%" },
-          "description": "Description for characteristic 2 related to the first glimpse of the early universe."
+          "description": "This \"Cosmic Gem\" was initially discovered by the Hubble Space Telescope. With Webb, researchers are able to identify where stars formed and how they're distributed."
+        },
+        {
+            "title": "Linear Features",
+            "dot_position": { "top": "45%", "left": "35%" },
+            "description": "These red linear lines are created when the light of a background galaxy is bent and magnified through gravitational lensing."
         }
       ]
     },
