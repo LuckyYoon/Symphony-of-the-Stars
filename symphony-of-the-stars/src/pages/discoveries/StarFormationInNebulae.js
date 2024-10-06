@@ -1,17 +1,29 @@
 import React, { useEffect, useRef, useContext, useState } from "react";
-import { Box, IconButton, Tooltip, Image } from "@chakra-ui/react";
+import { Box, IconButton, Tooltip, Image, Portal } from "@chakra-ui/react";
 import { CloseIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router-dom";
 import discoveriesData from "../../assets/json/discoveries.json";
 import { UserInteractionContext } from "../../UserInteractionContext";
+import { DetailsModal } from "../../components/DetailsModal";
 
 export default function StarFormationInNebulaePage() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalData, setModalData] = useState({});
   const { hasUserConsented } = useContext(UserInteractionContext);
   const audioRefDefault = useRef(null); // Reference for the default background audio element
   const audioRefs = useRef([]); // Reference array for characteristic audios
   const navigate = useNavigate();
   const [isPlaying, setIsPlaying] = useState([false, false, false]); // Track for the 3 buttons
   const [isAllPlaying, setIsAllPlaying] = useState(false);
+
+  const openModal = () => {
+    setModalData(data.modal_content); // Pass modal_content from the JSON
+    setIsModalOpen(true); // Open the modal
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false); // Close the modal
+  };
 
   // Directly access the Planetary Nebula data (id = 0)
   const data = discoveriesData.discoveries[4];
@@ -55,6 +67,9 @@ export default function StarFormationInNebulaePage() {
           updatedIsPlaying[index] = false; // Update the individual play state
         }
       });
+      if (audioRefDefault.current) {
+        audioRefDefault.current.pause(); // Pause the background music
+      }
       setIsAllPlaying(false); // Update state to indicate all tracks are paused
     } else {
       // Play all audio tracks
@@ -92,6 +107,19 @@ export default function StarFormationInNebulaePage() {
         backgroundSize="cover"
         backgroundPosition="center"
         backgroundRepeat="no-repeat"
+      />
+      <IconButton
+        icon={
+          <Image
+            src={`${process.env.PUBLIC_URL}/assets/image/buttons/read.png`} // Your image path here
+            alt="open-modal"
+          />
+        }
+        onClick={openModal} // Trigger the modal open function
+        bg="transparent"
+        opacity={1}
+        _hover={{ bg: "transparent" }}
+        size="lg"
       />
 
       {/* Close Button */}

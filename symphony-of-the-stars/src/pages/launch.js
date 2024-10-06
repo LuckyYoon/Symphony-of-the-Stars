@@ -24,9 +24,9 @@ export default function LaunchPage() {
 
   const fullText = "Hello JWST!";
   const typingSpeed = 200; // 0.2 seconds per character
-  const imageDuration = 4000; // Time each image stays visible, including transitions
+  const imageDuration = 6000; // Time each image stays visible, including transitions
   const fadeDuration = 1000; // Time for fading between images
-  const pageFadeDuration = 1000; // Time for fading out to the next page
+  const pageFadeDuration = 2000; // Time for fading out to the next page
   const totalDuration =
     (imageDuration + fadeDuration) * imagesData.images.length;
 

@@ -43,21 +43,24 @@ export default function WaterOnExoplanetsPage() {
     }
   };
 
-  // Toggle Play All/Pause All characteristic audio tracks
+  // Toggle Play All/Pause All characteristic audio tracks and background music
   const handleTogglePlayPauseAll = () => {
     const updatedIsPlaying = [...isPlaying]; // Make a copy of the current isPlaying state
 
     if (isAllPlaying) {
-      // Pause all audio tracks
+      // Pause all audio tracks and background music
       audioRefs.current.forEach((audio, index) => {
         if (audio) {
           audio.pause();
           updatedIsPlaying[index] = false; // Update the individual play state
         }
       });
+      if (audioRefDefault.current) {
+        audioRefDefault.current.pause(); // Pause the background music
+      }
       setIsAllPlaying(false); // Update state to indicate all tracks are paused
     } else {
-      // Play all audio tracks
+      // Play all audio tracks and background music
       audioRefs.current.forEach((audio, index) => {
         if (audio) {
           audio.volume = 0.5;
@@ -65,6 +68,12 @@ export default function WaterOnExoplanetsPage() {
           updatedIsPlaying[index] = true; // Update the individual play state
         }
       });
+      if (audioRefDefault.current) {
+        audioRefDefault.current.volume = 0.5; // Ensure the background music has volume
+        audioRefDefault.current
+          .play()
+          .catch((e) => console.error("Failed to play background music:", e));
+      }
       setIsAllPlaying(true); // Update state to indicate all tracks are playing
     }
     setIsPlaying(updatedIsPlaying); // Set the updated individual state

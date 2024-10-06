@@ -9,6 +9,28 @@
         "/assets/music/ancient_massive_galaxies/percussion2.wav",
         "/assets/music/ancient_massive_galaxies/others.wav"
       ],
+      "modal_content": {
+        "heading": "Ancient Massive Galaxies",
+        "subheading": "Discovery of Ancient Massive Galaxies",
+        "passages": [
+          {
+            "title": "Discovery and General Characteristics",
+            "description": "JWST has detected some of the oldest and most massive galaxies in the universe. These discoveries challenge existing theories about when galaxies first formed, as some of these massive structures appear to have developed much earlier than previously thought."
+          },
+          {
+            "title": "Unique Atmospheric Composition",
+            "description": "While massive galaxies don’t have traditional atmospheres, Webb’s instruments have revealed the presence of molecular gas and dust, as well as chemical signatures of elements like hydrogen and oxygen. These elements are essential for star formation within galaxies. Webb’s infrared observations allow scientists to study how these galaxies grew so large so quickly, giving insight into the conditions of the early universe."
+          },
+          {
+            "title": "Importance of Webb's Findings",
+            "description": "These findings could reshape our understanding of galaxy formation and the growth of large cosmic structures. The unexpected presence of massive galaxies at such an early stage in the universe suggests that galaxy formation may be a more rapid process than previously believed."
+          },
+          {
+            "title": "Scientific Impact and Future Exploration",
+            "description": "The discovery of massive galaxies that formed earlier than expected challenges existing models of galaxy formation. These observations suggest that galaxy growth can occur much faster than previously thought, leading to a re-evaluation of how cosmic structures evolve. Webb’s ability to study the mass, age, and chemical composition of these ancient galaxies provides crucial data for understanding the early universe’s dynamics. Future exploration will aim to study even more distant and massive galaxies, searching for the first galaxies that formed after the Big Bang. These studies could reveal new details about how galaxies accumulate mass and how black holes form and grow within them, reshaping our understanding of cosmic evolution."
+          }
+        ]
+      },
       "characteristics": [
         {
           "title": "Black Holes Add to Brightness",
@@ -36,7 +58,29 @@
         "/assets/musics/atmospheres_of_distant_worlds/percussion.wav",
         "/assets/musics/atmospheres_of_distant_worlds/strings.wav"
       ],
-     "characteristics": [
+      "modal_content": {
+        "heading": "Atmospheres of Distant Worlds",
+        "subheading": "Exploration of Exoplanet Atmospheres",
+        "passages": [
+          {
+            "title": "Discovery and General Characteristics",
+            "description": "JWST’s ability to study exoplanet atmospheres has provided a wealth of information about the composition of distant worlds. By observing how starlight passes through a planet’s atmosphere, Webb can detect gases and molecules that may suggest the presence of life-sustaining elements."
+          },
+          {
+            "title": "Unique Atmospheric Composition",
+            "description": "Webb’s infrared instruments can detect elements like water vapor (H2O), carbon dioxide (CO2), methane (CH4), and even sulfur dioxide (SO2) in the atmospheres of distant exoplanets. The presence of these molecules offers crucial clues about the potential habitability of these worlds, as well as their formation and evolution over time."
+          },
+          {
+            "title": "Importance of Webb's Findings",
+            "description": "These discoveries mark a critical step in the search for habitable planets. JWST’s precision in detecting atmospheric compositions helps scientists determine which planets may have conditions suitable for life."
+          },
+          {
+            "title": "Scientific Impact and Future Exploration",
+            "description": "Webb’s detailed analysis of exoplanet atmospheres represents a significant advancement in the search for habitable worlds. By detecting elements such as water vapor, carbon dioxide, and methane, Webb provides essential data for assessing whether these planets could support life. The ability to analyze atmospheres from light-years away offers new tools for identifying potentially habitable planets and understanding the diversity of planetary systems. Future exploration will focus on smaller, rocky planets, particularly those in the habitable zones of their stars, to search for biosignatures—indicators of life. Webb’s findings could direct future missions toward the most promising candidates for habitability, ultimately guiding humanity’s search for life beyond Earth."
+          }
+        ]
+      },
+      "characteristics": [
         {
           "title": "Stellar Nurseries",
           "dot_position": { "top": "33%", "left": "20%" },
@@ -63,6 +107,28 @@
         "/assets/music/deepest_infrared_image/strings.wav",
         "/assets/music/deepest_infrared_image/vocals.wav"
       ],
+      "modal_content": {
+        "heading": "Deepest Infrared Image",
+        "subheading": "Capture of the Deepest Infrared Image",
+        "passages": [
+          {
+            "title": "Discovery and General Characteristics",
+            "description": "One of JWST’s early achievements was capturing the deepest infrared image of the universe. By looking deeper into space and time than any telescope before it, Webb has uncovered galaxies previously unseen and given astronomers a better understanding of how stars and galaxies have formed throughout cosmic history."
+          },
+          {
+            "title": "Unique Atmospheric Composition",
+            "description": "Since this observation focuses on large-scale structures rather than individual planets, \"atmospheric composition\" refers to the interstellar gas and dust. Webb’s ability to capture the light emitted by these particles helps scientists understand the makeup of the early universe. Webb's instruments can detect elements like hydrogen, helium, and the early formation of complex molecules, giving a clearer picture of how matter began to clump together to form stars and galaxies."
+          },
+          {
+            "title": "Importance of Webb's Findings",
+            "description": "The infrared capabilities of JWST allow it to observe galaxies at their infancy, providing insights into how they grow and evolve over billions of years. This offers a new understanding of cosmic history and how structures in the universe have changed since the Big Bang."
+          },
+          {
+            "title": "Scientific Impact and Future Exploration",
+            "description": "Webb’s deepest infrared image allows scientists to see farther into space and time than ever before, revealing galaxies that were previously invisible to us. This level of detail helps astronomers trace the evolution of galaxies over billions of years, providing insights into the large-scale structure of the universe. The image shows us how galaxies cluster, merge, and evolve over time, offering clues about the distribution of dark matter and the processes that shape cosmic evolution. Future exploration will use Webb’s deep-field imaging to study specific regions of the universe, searching for clues about the nature of dark matter and the expansion of the universe. These observations could lead to groundbreaking discoveries about the fundamental forces that shaped the cosmos."
+          }
+        ]
+      },
       "characteristics": [
         {
           "title": "Vivid Star Clusters",
@@ -90,6 +156,28 @@
         "/assets/music/first_glimpse_of_the_early_universe/percussion.wav",
         "/assets/music/first_glimpse_of_the_early_universe/strings.wav"
       ],
+      "modal_content": {
+        "heading": "First Glimpse of The Early Universe",
+        "subheading": "Discovery of the Early Universe’s First Light",
+        "passages": [
+          {
+            "title": "Discovery and General Characteristics",
+            "description": "WThe James Webb Space Telescope’s observations of distant galaxies have given scientists an unprecedented view of the early universe. By capturing light from galaxies formed over 13 billion years ago, Webb provides a window into the moments just after the Big Bang. One of the telescope’s first major discoveries involved the detection of extremely distant, ancient galaxies using its near-infrared camera (NIRCam)."
+          },
+          {
+            "title": "Unique Atmospheric Composition",
+            "description": "While the atmospheres of these early galaxies remain mysterious, JWST’s ability to study their chemical compositions offers clues about the formation of the first stars and galaxies. Webb’s instruments detect elements like carbon and oxygen, which play crucial roles in stellar evolution."
+          },
+          {
+            "title": "Importance of Webb's Findings",
+            "description": "This early glimpse into the universe allows scientists to better understand how galaxies evolved over billions of years. Webb’s discoveries challenge previous models of cosmic formation, suggesting that some massive galaxies may have formed earlier than once thought. This pushes the boundaries of how we understand galaxy evolution and the formation of cosmic structures."
+          },
+          {
+            "title": "Scientific Impact and Future Exploration",
+            "description": "The discovery of water vapor and sulfur dioxide in the atmosphere of WASP-39 b has profound implications for the study of exoplanets. Webb’s observations mark the first time scientists have detected photochemistry in an exoplanet’s atmosphere, which is crucial for understanding how these distant worlds interact with their host stars. This detection paves the way for future atmospheric studies on smaller, rocky exoplanets, like those in the TRAPPIST-1 system, where scientists hope to discover the chemical signatures of potentially habitable conditions. The next steps involve using Webb’s capabilities to investigate the atmospheres of Earth-like exoplanets, looking for signs of water and other molecules that are essential for life. By refining models of atmospheric composition, scientists can better assess which planets might support life."
+          }
+        ]
+      },
       "characteristics": [
         {
           "title": "Early Universe",
@@ -102,9 +190,9 @@
           "description": "This \"Cosmic Gem\" was initially discovered by the Hubble Space Telescope. With Webb, researchers are able to identify where stars formed and how they're distributed."
         },
         {
-            "title": "Linear Features",
-            "dot_position": { "top": "45%", "left": "35%" },
-            "description": "These red linear lines are created when the light of a background galaxy is bent and magnified through gravitational lensing."
+          "title": "Linear Features",
+          "dot_position": { "top": "45%", "left": "35%" },
+          "description": "These red linear lines are created when the light of a background galaxy is bent and magnified through gravitational lensing."
         }
       ]
     },
@@ -117,6 +205,28 @@
         "/assets/music/star_formation_in_nebulae/fx.wav",
         "/assets/music/star_formation_in_nebulae/synth.wav"
       ],
+      "modal_content": {
+        "heading": "Star Formation in Nebulae",
+        "subheading": "Observation of Star Formation in Nebulae",
+        "passages": [
+          {
+            "title": "Discovery and General Characteristics",
+            "description": "JWST’s observations of nebulae have provided new insights into the process of star formation. Nebulae, clouds of gas and dust where stars are born, have long been the focus of astrophysical studies, but Webb’s infrared capabilities now allow us to peer through dense clouds to witness star formation in unprecedented detail."
+          },
+          {
+            "title": "Unique Atmospheric Composition",
+            "description": "Nebulae like the Carina Nebula, observed by JWST, are filled with gases such as hydrogen, helium, and trace amounts of heavier elements like carbon and oxygen. Webb’s instruments detect these elements and molecules, including those responsible for the birth of new stars. By analyzing the infrared light emitted from these elements, scientists can study the complex chemical processes that occur during the early stages of star formation."
+          },
+          {
+            "title": "Importance of Webb's Findings",
+            "description": "By studying nebulae like the Carina Nebula and the Pillars of Creation, JWST is helping scientists understand the complex physics behind star birth. This research could reveal more about the early life stages of stars and planetary systems."
+          },
+          {
+            "title": "Scientific Impact and Future Exploration",
+            "description": "Webb’s observations of nebulae, such as the Carina Nebula, have provided new insights into the process of star formation. The ability to peer through dense clouds of gas and dust allows scientists to study the early stages of star birth, which had been largely obscured until now. This research gives a clearer picture of how stars like our Sun form and evolve, as well as how planetary systems come into being. Future exploration will focus on observing more nebulae, particularly those in different stages of star formation, to create a more comprehensive model of stellar evolution. By studying a wider range of star-forming regions, Webb will help scientists understand the processes that lead to the formation of planets and, potentially, the conditions for life."
+          }
+        ]
+      },
       "characteristics": [
         {
           "title": "Radiant red color",
@@ -144,6 +254,28 @@
         "/assets/music/water_on_exoplanets/fx.wav",
         "/assets/music/water_on_exoplanets/others.wav"
       ],
+      "modal_content": {
+        "heading": "Water on Exoplanets",
+        "subheading": "Discovery of WASP-39 b",
+        "passages": [
+          {
+            "title": "Discovery and General Characteristics",
+            "description": "WASP-39 b is a gas giant exoplanet orbiting a G-type star, located approximately 700 light-years away from Earth. It has a mass of 0.28 Jupiters and a radius of 1.332 times that of Jupiter. The planet orbits very close to its star, at a distance of 0.0486 AU, completing one orbit in just 4.1 days. WASP-39 b was discovered in 2011 using the transit method."
+          },
+          {
+            "title": "Unique Atmospheric Composition",
+            "description": "The atmosphere of WASP-39 b has been the subject of extensive study, especially after the James Webb Space Telescope (JWST) began its observations in 2022. Webb's instruments detected a broad range of elements and molecules in the planet’s atmosphere, including sodium (Na), potassium (K), and water vapor (H2O). Importantly, JWST also made the first detection of sulfur dioxide (SO2) in an exoplanet atmosphere, indicating active photochemistry—chemical reactions triggered by the light from the planet's host star."
+          },
+          {
+            "title": "Importance of Webb's Findings",
+            "description": "The detailed analysis of WASP-39 b’s atmosphere is groundbreaking. The chemical profile revealed by Webb’s instruments helps scientists understand the planet's history, suggesting that it likely formed far from its current position before migrating closer to its star. The detection of sulfur dioxide and other elements offers a deeper insight into how exoplanets interact with their parent stars and how their atmospheres evolve over time. This new understanding opens the door for future studies of smaller, rocky planets, such as those in the TRAPPIST-1 system."
+          },
+          {
+            "title": "Scientific Impact and Future Exploration",
+            "description": "The discovery of water vapor and sulfur dioxide in the atmosphere of WASP-39 b has profound implications for the study of exoplanets. Webb’s observations mark the first time scientists have detected photochemistry in an exoplanet’s atmosphere, which is crucial for understanding how these distant worlds interact with their host stars. This detection paves the way for future atmospheric studies on smaller, rocky exoplanets, like those in the TRAPPIST-1 system, where scientists hope to discover the chemical signatures of potentially habitable conditions. The next steps involve using Webb’s capabilities to investigate the atmospheres of Earth-like exoplanets, looking for signs of water and other molecules that are essential for life. By refining models of atmospheric composition, scientists can better assess which planets might support life."
+          }
+        ]
+      },
       "characteristics": [
         {
           "title": "How Water Appear on Planets",

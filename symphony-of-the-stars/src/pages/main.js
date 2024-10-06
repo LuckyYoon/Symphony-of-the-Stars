@@ -56,9 +56,6 @@ export default function MainPage() {
       >
         The Universe Through the Eyes of JWST
       </Text>
-      {/* Side Drawer */}
-      <SideDrawer />
-
       {/* Decorative Horizontal Line */}
       <Box
         alignSelf="center"
