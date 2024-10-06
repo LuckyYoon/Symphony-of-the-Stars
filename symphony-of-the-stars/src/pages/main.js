@@ -78,7 +78,7 @@ export default function MainPage() {
       <Box
         alignSelf="center"
         position="absolute"
-        top="51%"
+        top="54%"
         left="50%"
         transform="translateX(-50%)"
         height="8px"
@@ -100,7 +100,7 @@ export default function MainPage() {
                 width="125px"
                 borderRadius="full"
                 backgroundImage={`${process.env.PUBLIC_URL}${image.image_path}`}
-                backgroundSize={zoomedImages[index] ? "100%" : "150%"}
+                backgroundSize={zoomedImages[index] ? "100%" : "200%"}
                 backgroundPosition="center"
                 backgroundRepeat="no-repeat"
                 boxShadow="0 0 7px 7px rgba(0,0,0, 0.9)"
@@ -120,7 +120,7 @@ export default function MainPage() {
               />
               <Text
                 color="accent.400"
-                fontSize="xl"
+                fontSize="l"
                 whiteSpace="pre-line"
                 fontWeight="bold"
                 align="center"

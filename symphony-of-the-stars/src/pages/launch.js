@@ -28,7 +28,7 @@ export default function LaunchPage() {
   const fadeDuration = 1000; // Time for fading between images
   const pageFadeDuration = 2000; // Time for fading out to the next page
   const totalDuration =
-    (imageDuration + fadeDuration) * imagesData.images.length;
+    (imageDuration + fadeDuration) * imagesData.images.length - fadeDuration;
 
   // Function to start the journey
   const startJourney = () => {
