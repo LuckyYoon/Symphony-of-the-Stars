@@ -1,14 +1,14 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import LaunchPage from "./pages/launch";
 import MainPage from "./pages/main";
 import JWSTPage from "./pages/jwst";
 import { UserInteractionProvider } from "./UserInteractionContext";
 import AtmospheresOfDistantWorldsPage from "./pages/discoveries/AtmospheresOfDistantWorlds";
-import DeepestInfraredImagePage from "./pages/discoveries/DeepestInfraredImage"
-import AncientMassiveGalaxiesPage from "./pages/discoveries/AncientMassiveGalaxies"
-import StarFormationInNebulaePage from "./pages/discoveries/StarFormationInNebulae"
+import DeepestInfraredImagePage from "./pages/discoveries/DeepestInfraredImage";
+import AncientMassiveGalaxiesPage from "./pages/discoveries/AncientMassiveGalaxies";
+import StarFormationInNebulaePage from "./pages/discoveries/StarFormationInNebulae";
 import EarlyUniversePage from "./pages/discoveries/EarlyUniverse";
 import WaterOnExoplanetsPage from "./pages/discoveries/WaterOnExoplanets";
 
@@ -36,10 +36,7 @@ function App() {
             path="/star-formation-in-nebulae"
             element={<StarFormationInNebulaePage />}
           />
-          <Route
-            path="/early-universe"
-            element={<EarlyUniversePage />}
-          />
+          <Route path="/early-universe" element={<EarlyUniversePage />} />
           <Route
             path="/water-on-exoplanets"
             element={<WaterOnExoplanetsPage />}

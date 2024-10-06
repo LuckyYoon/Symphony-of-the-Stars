@@ -1,10 +1,5 @@
 import React, { useEffect, useRef, useState, useContext } from "react";
-import {
-  Box,
-  HStack,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
+import { Box, HStack, Text, VStack } from "@chakra-ui/react";
 import imagesData from "../assets/json/main.json"; // Import JSON data
 import { UserInteractionContext } from "../UserInteractionContext";
 import { useNavigate } from "react-router-dom";
@@ -39,7 +34,7 @@ export default function MainPage() {
 
   return (
     <Box
-      bgImage="url('/assets/image/background/53567451213_74765a4a5a_4k.jpg')"
+      bgImage={`url(${process.env.PUBLIC_URL}/assets/image/background/53567451213_74765a4a5a_4k.jpg)`}
       bgSize="cover"
       bgPosition="center"
       bgBlendMode="darken"
@@ -62,7 +57,7 @@ export default function MainPage() {
         The Universe Through the Eyes of JWST
       </Text>
       {/* Side Drawer */}
-      <SideDrawer/>
+      <SideDrawer />
 
       {/* Decorative Horizontal Line */}
       <Box
@@ -89,7 +84,7 @@ export default function MainPage() {
                 height="125px"
                 width="125px"
                 borderRadius="full"
-                backgroundImage={`url(${image.image_path})`}
+                backgroundImage={`${process.env.PUBLIC_URL}${image.image_path}`}
                 backgroundSize={zoomedImages[index] ? "100%" : "150%"}
                 backgroundPosition="center"
                 backgroundRepeat="no-repeat"
@@ -122,7 +117,11 @@ export default function MainPage() {
         </HStack>
       </Box>
 
-      <audio ref={audioRef} src="/assets/music/main.wav" loop />
+      <audio
+        ref={audioRef}
+        src={`${process.env.PUBLIC_URL}/assets/music/main.wav`}
+        loop
+      />
     </Box>
   );
 }

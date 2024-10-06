@@ -149,7 +149,7 @@ export default function LaunchPage() {
         // Display the slideshow after typing is complete
         <>
           <Image
-            src={currentImage.image_path}
+            src={`${process.env.PUBLIC_URL}${currentImage.image_path}`}
             alt={currentImage.title}
             width="100%"
             height="100%"
@@ -180,7 +180,7 @@ export default function LaunchPage() {
       {/* Background Music */}
       <audio
         ref={audioRef}
-        src="/assets/music/launch.wav" // Replace with your music file path
+        src={`${process.env.PUBLIC_URL}/assets/music/launch.wav`}
         loop
       />
     </Box>
