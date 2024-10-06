@@ -2,23 +2,28 @@
   "discoveries": [
     {
       "id": 0,
-      "image_path": "/assets/images/ancient_massive_galaxies/",
+      "image_path": "/assets/image/timeline/53949426179_409e1c6806_k.jpg",
       "music_path": [
-        "/assets/musics/ancient_massive_galaxies/bass.wav",
-        "/assets/musics/ancient_massive_galaxies/percussion1.wav",
-        "/assets/musics/ancient_massive_galaxies/percussion2.wav",
-        "/assets/musics/ancient_massive_galaxies/others.wav"
+        "/assets/music/ancient_massive_galaxies/bass.wav",
+        "/assets/music/ancient_massive_galaxies/percussion1.wav",
+        "/assets/music/ancient_massive_galaxies/percussion2.wav",
+        "/assets/music/ancient_massive_galaxies/others.wav"
       ],
       "characteristics": [
         {
-          "title": "Galaxy Characteristic 1",
+          "title": "Black Holes Add to Brightness",
           "dot_position": { "top": "50%", "left": "50%" },
-          "description": "Description for characteristic 1 related to ancient massive galaxies."
+          "description": "The galaxies that are massive is likely to host black holes. The fast moving gas in the black holes tend to create friction, making the galaxies look brighter than the other galaxies surrounding them. These galaxies with more brightness can appear as if they have more stars. When these bright galaxies are removed it is more easier for scientists to fit early galaxies in a model."
         },
         {
-          "title": "Galaxy Characteristic 2",
+          "title": "Efficient Star Factories",
           "dot_position": { "top": "40%", "left": "30%" },
-          "description": "Description for characteristic 2 related to ancient massive galaxies."
+          "description": "In the early universe, stars form quickly then the universe that we are in right now. In the region that we live in the universe, opposing things tends to have more opposing forces which slows down the formation of stars. But, in theory, ancient universe was denser than today, it is harder to blow gas away which makes it easier to form stars."
+        },
+        {
+          "title": "Black Holes Impact on Cosmology",
+          "dot_position": { "top": "10%", "left": "10%" },
+          "description": "There is a lot to research about the differences between the light that comes out of stars and the light comes out from gases in the blackhole. The scientists, now knowing that blackhole also contributes to the brightness of the galaxies, needs to differentiate whether the light is coming from the blackhole or the stars."
         }
       ]
     },

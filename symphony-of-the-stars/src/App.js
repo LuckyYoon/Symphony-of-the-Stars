@@ -6,6 +6,7 @@ import MainPage from "./pages/main";
 import { UserInteractionProvider } from "./UserInteractionContext";
 import AtmospheresOfDistantWorldsPage from "./pages/discoveries/AtmospheresOfDistantWorlds";
 import DeepestInfraredImagePage from "./pages/discoveries/DeepestInfraredImage"
+import AncientMassiveGalaxiesPage from "./pages/discoveries/AncientMassiveGalaxies"
 
 function App() {
   return (
@@ -21,6 +22,10 @@ function App() {
           <Route
             path="/deepest-infrared-image"
             element={<DeepestInfraredImagePage />}
+          />
+          <Route
+            path="/ancient-massive-galaxies"
+            element={<AncientMassiveGalaxiesPage />}
           />
         </Routes>
       </Router>
