@@ -12,6 +12,7 @@ export default function JWSTPage() {
     if (!containerRef.current) return;
 
     const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0x000000);
 
     const hdriLoader = new RGBELoader();
     hdriLoader.load(
@@ -21,6 +22,14 @@ export default function JWSTPage() {
         scene.environment = texture;
       }
     );
+
+    /*hdriLoader.load(
+      process.env.PUBLIC_URL + "/assets/jwst/nebulae.hdr",
+      function (texture) {
+        texture.mapping = THREE.EquirectangularReflectionMapping;
+        scene.background = texture;
+      }
+    );*/
 
     const camera = new THREE.PerspectiveCamera(
       75,
@@ -53,13 +62,13 @@ export default function JWSTPage() {
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.toneMapping = THREE.ACESFilmicToneMapping; // Set tone mapping method
-    renderer.toneMappingExposure = 1.5; // Adjust exposure value (1.0 is default)
+    renderer.toneMappingExposure = 2; // Adjust exposure value (1.0 is default)
 
     // Append the WebGL renderer to the container
     containerRef.current.appendChild(renderer.domElement);
 
     // Camera positioning
-    camera.position.z = objToRender === "jwst" ? 25 : 500;
+    camera.position.z = objToRender === "jwst" ? 30 : 500;
 
     // Add lights to the scene
     const topLight = new THREE.DirectionalLight(0xffffff, 1);
