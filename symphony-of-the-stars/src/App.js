@@ -7,6 +7,7 @@ import { UserInteractionProvider } from "./UserInteractionContext";
 import AtmospheresOfDistantWorldsPage from "./pages/discoveries/AtmospheresOfDistantWorlds";
 import DeepestInfraredImagePage from "./pages/discoveries/DeepestInfraredImage"
 import AncientMassiveGalaxiesPage from "./pages/discoveries/AncientMassiveGalaxies"
+import StarFormationInNebulaePage from "./pages/discoveries/StarFormationInNebulae"
 import EarlyUniversePage from "./pages/discoveries/EarlyUniverse";
 import WaterOnExoplanetsPage from "./pages/discoveries/WaterOnExoplanets";
 
@@ -20,7 +21,7 @@ function App() {
           <Route
             path="/atmospheres-of-distant-worlds"
             element={<AtmospheresOfDistantWorldsPage />}
-          />-v
+          />
           <Route
             path="/deepest-infrared-image"
             element={<DeepestInfraredImagePage />}
@@ -28,6 +29,10 @@ function App() {
           <Route
             path="/ancient-massive-galaxies"
             element={<AncientMassiveGalaxiesPage />}
+          />
+          <Route
+            path="/star-formation-in-nebulae"
+            element={<StarFormationInNebulaePage />}
           />
           <Route
             path="/early-universe"
