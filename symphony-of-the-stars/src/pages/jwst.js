@@ -1,6 +1,7 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useContext } from "react";
 import { Button } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
+import { UserInteractionContext } from "../UserInteractionContext";
 import * as THREE from "https://cdn.skypack.dev/three@0.129.0/build/three.module.js";
 import { GLTFLoader } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js";
 import { OrbitControls } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js";
@@ -8,6 +9,8 @@ import { RGBELoader } from "https://cdn.skypack.dev/three@0.136.0/examples/jsm/l
 
 export default function JWSTPage() {
   const containerRef = useRef(null); // Create a ref to the container element
+  const audioRef = useRef(null); // Reference to the audio element
+  const { hasUserConsented } = useContext(UserInteractionContext);
 
   const navigate = useNavigate(); // React Router's hook for navigation
   const handleRedirectToJWST = () => {
@@ -15,6 +18,22 @@ export default function JWSTPage() {
   };
 
   useEffect(() => {
+    if (hasUserConsented && audioRef.current) {
+      audioRef.current.volume = 0.5;
+      audioRef.current.play().catch((e) => {
+        console.error("Failed to autoplay music:", e);
+      });
+    }
+  }, [hasUserConsented]);
+
+  useEffect(() => {
+    if (hasUserConsented && audioRef.current) {
+      audioRef.current.volume = 0.5;
+      audioRef.current.play().catch((e) => {
+        console.error("Failed to autoplay music:", e);
+      });
+    }
+
     // Make sure the ref exists and has been attached to the DOM
     if (!containerRef.current) return;
 
@@ -140,7 +159,7 @@ export default function JWSTPage() {
         containerRef.current.removeChild(renderer.domElement);
       }
     };
-  }, []); // Empty dependency array to run effect once on mount
+  }, [hasUserConsented]); // Empty dependency array to run effect once on mount
 
   return (
     <div>
@@ -156,6 +175,12 @@ export default function JWSTPage() {
       >
         Back
       </Button>
+
+      <audio
+        ref={audioRef}
+        src={`${process.env.PUBLIC_URL}/assets/music/star_formation_in_nebulae/fx.wav`}
+        loop
+      />
       <div ref={containerRef} style={{ width: "100vw", height: "100vh" }} />
     </div>
   );

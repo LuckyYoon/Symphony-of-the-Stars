@@ -71,7 +71,7 @@ export default function MainPage() {
         onClick={handleRedirectToJWST}
         zIndex="999" // Ensure the button is on top
       >
-        Go to JWST
+        Interactive JWST Model
       </Button>
 
       {/* Side Drawer */}
