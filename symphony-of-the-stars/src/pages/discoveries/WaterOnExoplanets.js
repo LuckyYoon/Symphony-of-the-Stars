@@ -1,10 +1,9 @@
 import React, { useEffect, useRef, useContext, useState } from "react";
-import { Box, IconButton, Tooltip } from "@chakra-ui/react";
+import { Box, IconButton, Tooltip, Image } from "@chakra-ui/react";
 import { CloseIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router-dom";
 import discoveriesData from "../../assets/json/discoveries.json";
 import { UserInteractionContext } from "../../UserInteractionContext";
-import { FaVolumeUp, FaVolumeMute } from "react-icons/fa";
 
 export default function WaterOnExoplanetsPage() {
   const { hasUserConsented } = useContext(UserInteractionContext);
@@ -12,6 +11,7 @@ export default function WaterOnExoplanetsPage() {
   const audioRefs = useRef([]); // Reference array for characteristic audios
   const navigate = useNavigate();
   const [isPlaying, setIsPlaying] = useState([false, false, false]); // Track for the 3 buttons
+  const [isAllPlaying, setIsAllPlaying] = useState(false);
 
   // Directly access the Planetary Nebula data (id = 0)
   const data = discoveriesData.discoveries[5];
@@ -43,6 +43,33 @@ export default function WaterOnExoplanetsPage() {
     }
   };
 
+  // Toggle Play All/Pause All characteristic audio tracks
+  const handleTogglePlayPauseAll = () => {
+    const updatedIsPlaying = [...isPlaying]; // Make a copy of the current isPlaying state
+
+    if (isAllPlaying) {
+      // Pause all audio tracks
+      audioRefs.current.forEach((audio, index) => {
+        if (audio) {
+          audio.pause();
+          updatedIsPlaying[index] = false; // Update the individual play state
+        }
+      });
+      setIsAllPlaying(false); // Update state to indicate all tracks are paused
+    } else {
+      // Play all audio tracks
+      audioRefs.current.forEach((audio, index) => {
+        if (audio) {
+          audio.volume = 0.5;
+          audio.play().catch((e) => console.error("Failed to play track:", e));
+          updatedIsPlaying[index] = true; // Update the individual play state
+        }
+      });
+      setIsAllPlaying(true); // Update state to indicate all tracks are playing
+    }
+    setIsPlaying(updatedIsPlaying); // Set the updated individual state
+  };
+
   useEffect(() => {
     // Set all audio tracks to play on loop with initial volume 0.0 except the default track
     audioRefs.current.forEach((audio, index) => {
@@ -69,7 +96,13 @@ export default function WaterOnExoplanetsPage() {
 
       {/* Close Button */}
       <IconButton
-        icon={<CloseIcon />}
+        icon={
+          <Image
+            src={`${process.env.PUBLIC_URL}/assets/image/buttons/x.png`}
+            alt="x"
+            position="absolute"
+          />
+        }
         onClick={() => navigate("/main")}
         position="absolute"
         top="25px"
@@ -81,7 +114,38 @@ export default function WaterOnExoplanetsPage() {
         boxSize="50px"
         fontSize="25px"
       />
+      <Image
+        src={`${process.env.PUBLIC_URL}/assets/image/buttons/orchestrate.png`}
+        alt="Orchestrate"
+        height="40px"
+        width="180px"
+        position="absolute"
+        bottom="55px"
+        right="55px"
+      />
 
+      {/* Play All/Pause All Button */}
+      <IconButton
+        icon={
+          <Image
+            src={
+              isAllPlaying
+                ? `${process.env.PUBLIC_URL}/assets/image/buttons/on.png`
+                : `${process.env.PUBLIC_URL}/assets/image/buttons/off.png`
+            }
+            alt="toggle-play-pause-all"
+            boxSize="100px"
+          />
+        }
+        onClick={handleTogglePlayPauseAll}
+        position="absolute"
+        bottom="119px"
+        right="95px"
+        bg="transparent"
+        opacity={1}
+        _hover={{ bg: "transparent" }}
+        size="lg"
+      />
       {/* Audio Element for the default music (always plays) */}
       <audio
         ref={audioRefDefault}
@@ -100,12 +164,21 @@ export default function WaterOnExoplanetsPage() {
         >
           <Tooltip label={char.description}>
             <IconButton
-              icon={isPlaying[index] ? <FaVolumeMute /> : <FaVolumeUp />}
+              icon={
+                <Image
+                  src={
+                    isPlaying[index]
+                      ? `${process.env.PUBLIC_URL}/assets/image/buttons/pause.png`
+                      : `${process.env.PUBLIC_URL}/assets/image/buttons/play.png`
+                  }
+                  alt="logo"
+                  boxSize="100px" // Adjust size to fit the button
+                />
+              }
               onClick={() => handleSetVolume(index)}
-              bg="accent.600"
-              opacity={0.5}
-              color="white"
-              _hover={{ bg: "accent.200" }}
+              bg="transparent"
+              opacity={1}
+              _hover={{ bg: "transparent" }}
               size="lg"
             />
           </Tooltip>

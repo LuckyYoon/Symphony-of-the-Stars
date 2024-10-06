@@ -2,6 +2,7 @@
   "name": "symphony-of-the-stars",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://luckyyoon.github.io/Symphony-of-the-Stars/",
   "dependencies": {
     "@chakra-ui/icons": "^2.2.4",
     "@chakra-ui/react": "^2.10.1",
