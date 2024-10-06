@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState, useContext } from "react";
-import { Box, HStack, Text, VStack } from "@chakra-ui/react";
+import { Box, HStack, Text, VStack, Button } from "@chakra-ui/react";
 import imagesData from "../assets/json/main.json"; // Import JSON data
 import { UserInteractionContext } from "../UserInteractionContext";
 import { useNavigate } from "react-router-dom";
@@ -32,6 +32,10 @@ export default function MainPage() {
     }, 1000); // Duration of zoom animation
   };
 
+  const handleRedirectToJWST = () => {
+    navigate("/jwst"); // Redirect to /jwst page
+  };
+
   return (
     <Box
       bgImage={`url(${process.env.PUBLIC_URL}/assets/image/background/53567451213_74765a4a5a_4k.jpg)`}
@@ -56,6 +60,20 @@ export default function MainPage() {
       >
         The Universe Through the Eyes of JWST
       </Text>
+
+      {/* Redirect Button */}
+      <Button
+        position="absolute"
+        top="10px"
+        left="10px"
+        colorScheme="yellow"
+        variant="solid"
+        onClick={handleRedirectToJWST}
+        zIndex="999" // Ensure the button is on top
+      >
+        Go to JWST
+      </Button>
+
       {/* Side Drawer */}
       <SideDrawer />
 

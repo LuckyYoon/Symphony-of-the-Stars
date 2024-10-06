@@ -1,4 +1,6 @@
 import React, { useEffect, useRef } from "react";
+import { Button } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 import * as THREE from "https://cdn.skypack.dev/three@0.129.0/build/three.module.js";
 import { GLTFLoader } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js";
 import { OrbitControls } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js";
@@ -6,6 +8,11 @@ import { RGBELoader } from "https://cdn.skypack.dev/three@0.136.0/examples/jsm/l
 
 export default function JWSTPage() {
   const containerRef = useRef(null); // Create a ref to the container element
+
+  const navigate = useNavigate(); // React Router's hook for navigation
+  const handleRedirectToJWST = () => {
+    navigate("/main"); // Redirect to /jwst page
+  };
 
   useEffect(() => {
     // Make sure the ref exists and has been attached to the DOM
@@ -22,14 +29,6 @@ export default function JWSTPage() {
         scene.environment = texture;
       }
     );
-
-    /*hdriLoader.load(
-      process.env.PUBLIC_URL + "/assets/jwst/nebulae.hdr",
-      function (texture) {
-        texture.mapping = THREE.EquirectangularReflectionMapping;
-        scene.background = texture;
-      }
-    );*/
 
     const camera = new THREE.PerspectiveCamera(
       75,
@@ -95,9 +94,9 @@ export default function JWSTPage() {
 
     // Add interactive button
     const buttonGeometry = new THREE.SphereGeometry(0, 16, 8);
-    const buttonMaterial = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+    const buttonMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff });
     const button = new THREE.Mesh(buttonGeometry, buttonMaterial);
-    button.position.set(0, -5, 0); // Position it in front of the JWST model
+    button.position.set(0, 5, 10); // Position it in front of the JWST model
     scene.add(button);
 
     // Set up raycaster for mouse interaction
@@ -117,7 +116,7 @@ export default function JWSTPage() {
         const clickedObject = intersects[0].object;
         if (clickedObject === button) {
           console.log("Button clicked!");
-          button.material.color.set(0xff0000); // Darken button on click
+          button.material.color.set(0xff00ff); // Darken button on click
         }
       }
     }
@@ -145,6 +144,18 @@ export default function JWSTPage() {
 
   return (
     <div>
+      {/* Redirect Button */}
+      <Button
+        position="absolute"
+        top="10px"
+        right="10px"
+        colorScheme="yellow"
+        variant="solid"
+        onClick={handleRedirectToJWST}
+        zIndex="999" // Ensure the button is on top
+      >
+        Back
+      </Button>
       <div ref={containerRef} style={{ width: "100vw", height: "100vh" }} />
     </div>
   );
